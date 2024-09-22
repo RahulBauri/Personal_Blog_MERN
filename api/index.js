@@ -29,5 +29,3 @@ app.use('/api/user', userRouter);
 app.listen(PORT, () => {
   console.log(`server is listening on the port ${PORT}...`);
 });
-
-// mongodb+srv://Rahul:I1jJGfsfaFRluvT7@nodeexpressprojects.bjn2qat.mongodb.net/?retryWrites=true&w=majority&appName=NodeExpressProjects/Personal_Blog_App
