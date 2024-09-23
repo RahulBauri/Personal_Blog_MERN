@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
+import errorHandlerMiddleware from './middlewares/errorHandler.middleware.js';
 
 dotenv.config();
 
@@ -27,6 +28,8 @@ app.get('/test', (req, res) => {
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
+
+app.use(errorHandlerMiddleware);
 
 app.listen(PORT, () => {
   console.log(`server is listening on the port ${PORT}...`);
