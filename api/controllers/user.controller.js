@@ -1,3 +1,3 @@
 export const test = (req, res) => {
-  res.json('user router working!');
+  res.json('user test controller');
 };
