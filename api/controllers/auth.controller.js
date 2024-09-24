@@ -25,7 +25,7 @@ export const signup = async (req, res, next) => {
       email,
       password: hashedPassword,
     });
-    res.json('signup  successful');
+    res.json('signup successful');
   } catch (error) {
     next(error);
   }
